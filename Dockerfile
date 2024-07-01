@@ -34,5 +34,6 @@ RUN python -m nltk.downloader stopwords
 RUN python -m nltk.downloader punkt
 RUN python -c "import tiktoken; tiktoken.get_encoding(\"cl100k_base\")"
 RUN chmod +x run.sh
+EXPOSE 9998
 EXPOSE 5001
 CMD ./run.sh
