@@ -23,9 +23,9 @@ conda install -c conda-forge python-magic
 ```
 6. Command to run tika server
 ```
- java -jar ./jars/tika-server-standard-nlm-modified-2.9.2_v2.jar
+java -jar ./jars/tika-server-standard-nlm-modified-2.9.2_v2.jar
 ```
-7. Start the backend server
+7. Start the backend server [ONLY FOR LOCAL DEV]
 ```
 python -m nlm_ingestor.ingestion_daemon
 ```
