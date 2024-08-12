@@ -13,12 +13,12 @@ from itertools import groupby
 from bs4 import BeautifulSoup
 from timeit import default_timer
 
-from nlm_ingestor.ingestor_utils.utils import sent_tokenize
-from nlm_ingestor.ingestor_utils.ing_named_tuples import BoxStyle, LineStyle, LocationKey
-from nlm_ingestor.ingestor.visual_ingestor import style_utils, table_parser, indent_parser, block_renderer, order_fixer
-from nlm_ingestor.ingestor import line_parser
-from nlm_ingestor.ingestor_utils.parsing_utils import *
-from nlm_ingestor.ingestor.visual_ingestor import vi_helper_utils as vhu
+from ...ingestor_utils.utils import sent_tokenize
+from ...ingestor_utils.ing_named_tuples import BoxStyle, LineStyle, LocationKey
+from ...ingestor.visual_ingestor import style_utils, table_parser, indent_parser, block_renderer, order_fixer
+from ...ingestor import line_parser
+from ...ingestor_utils.parsing_utils import *
+from ...ingestor.visual_ingestor import vi_helper_utils as vhu
 
 base_font_size = 3
 header_margin = 0.18            # don't touch this!

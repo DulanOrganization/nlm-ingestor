@@ -5,8 +5,8 @@ import string
 from symspellpy.symspellpy import SymSpell
 from symspellpy.symspellpy import Verbosity
 
-import nlm_ingestor.ingestor as ingestor
-from nlm_ingestor.ingestor import patterns
+from .. import ingestor as ingestor
+from ..ingestor import patterns
 
 logger = logging.getLogger(__name__)
 

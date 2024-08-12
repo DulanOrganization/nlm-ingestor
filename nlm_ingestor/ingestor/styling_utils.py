@@ -4,9 +4,9 @@ from collections import Counter
 from collections import defaultdict
 from statistics import median
 
-from nlm_ingestor.ingestor import formatter
-from nlm_ingestor.ingestor import line_parser
-from nlm_ingestor.ingestor_utils.word_splitter import WordSplitter
+from ..ingestor import formatter
+from ..ingestor import line_parser
+from ..ingestor_utils.word_splitter import WordSplitter
 
 ws = WordSplitter()
 

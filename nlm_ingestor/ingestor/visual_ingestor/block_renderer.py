@@ -1,6 +1,6 @@
 HTML_DEBUG = False
 
-from nlm_ingestor.ingestor.visual_ingestor import style_utils, table_parser, indent_parser
+from ...ingestor.visual_ingestor import style_utils, table_parser, indent_parser  # noqa: E402
 
 
 class BlockRenderer:

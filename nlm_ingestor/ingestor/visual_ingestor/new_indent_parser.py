@@ -1,4 +1,4 @@
-from nlm_ingestor.ingestor_utils.utils import detect_block_center_aligned
+from ...ingestor_utils.utils import detect_block_center_aligned
 import re
 from collections import namedtuple
 from collections import Counter

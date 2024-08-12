@@ -1,12 +1,12 @@
 import logging
-import nlm_ingestor.ingestion_daemon.config as cfg
+from . import config as cfg
 import os
 import tempfile
 import traceback
 from flask import Flask, request, jsonify, make_response
 from werkzeug.utils import secure_filename
-from nlm_ingestor.ingestor import ingestor_api
-from nlm_utils.utils import file_utils
+from ..ingestor import ingestor_api
+from ..nlm_utils.utils import file_utils
 
 app = Flask(__name__)
 
@@ -71,6 +71,7 @@ def parse_document(
     return make_response(jsonify({"status": status, "reason": msg}), rc)
 
 def main():
+    print("Starting API Service for NLM Ingestor")
     logger.info("Starting ingestor service..")
     app.run(host="0.0.0.0", port=5001, debug=False)
 

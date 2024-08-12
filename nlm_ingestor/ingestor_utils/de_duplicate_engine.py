@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 
 import numpy as np
-from nlm_utils.model_client import EncoderClient
+from ..nlm_utils.model_client import EncoderClient
 
 
 class DeDuplicateEngine:

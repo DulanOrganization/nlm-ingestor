@@ -7,13 +7,13 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 
-from nlm_ingestor.file_parser import pdf_file_parser
+from ..file_parser import pdf_file_parser
 from timeit import default_timer
 from .visual_ingestor import visual_ingestor
-from nlm_ingestor.ingestor.visual_ingestor.new_indent_parser import NewIndentParser
-from nlm_ingestor.ingestor_utils.utils import NpEncoder, \
+from ..ingestor.visual_ingestor.new_indent_parser import NewIndentParser
+from ..ingestor_utils.utils import NpEncoder, \
     detect_block_center_aligned, detect_block_center_of_page
-from nlm_ingestor.ingestor_utils import utils
+from ..ingestor_utils import utils
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

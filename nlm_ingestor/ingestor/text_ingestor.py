@@ -1,10 +1,10 @@
 import json
 import logging
 from collections import namedtuple
-from nlm_ingestor.ingestor_utils.utils import NpEncoder
-from nlm_ingestor.ingestor_utils import utils
-from nlm_ingestor.ingestor.visual_ingestor import block_renderer
-from nlm_ingestor.ingestor_utils.ing_named_tuples import LineStyle
+from ..ingestor_utils.utils import NpEncoder
+from ..ingestor_utils import utils
+from ..ingestor.visual_ingestor import block_renderer
+from ..ingestor_utils.ing_named_tuples import LineStyle
 from . import processors
 
 class TextIngestor:

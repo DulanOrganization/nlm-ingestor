@@ -8,12 +8,12 @@ import shutil
 
 from timeit import default_timer
 
-import nlm_ingestor.ingestion_daemon.config as cfg
-from nlm_ingestor.file_parser import markdown_parser
-from nlm_ingestor.ingestor_utils.utils import NpEncoder
-from nlm_ingestor.ingestor import html_ingestor, pdf_ingestor, xml_ingestor, text_ingestor
-from nlm_ingestor.file_parser import pdf_file_parser
-from nlm_utils.utils import ensure_bool
+from ..ingestion_daemon import config as cfg
+from ..file_parser import markdown_parser
+from ..ingestor_utils.utils import NpEncoder
+from ..ingestor import html_ingestor, pdf_ingestor, xml_ingestor, text_ingestor
+from ..file_parser import pdf_file_parser
+from ..nlm_utils.utils import ensure_bool
 from bs4 import BeautifulSoup
 import numpy as np
 

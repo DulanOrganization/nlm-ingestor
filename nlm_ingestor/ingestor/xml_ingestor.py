@@ -1,10 +1,10 @@
 import xml.etree.ElementTree as ET
 import re
 
-from nlm_ingestor.ingestor import processors
-from nlm_ingestor.ingestor.visual_ingestor import block_renderer
-from nlm_ingestor.ingestor_utils.utils import sent_tokenize
-from nlm_ingestor.ingestor_utils.ing_named_tuples import LineStyle
+from ..ingestor import processors
+from ..ingestor.visual_ingestor import block_renderer
+from ..ingestor_utils.utils import sent_tokenize
+from ..ingestor_utils.ing_named_tuples import LineStyle
 
 # from nltk import sent_tokenize
 

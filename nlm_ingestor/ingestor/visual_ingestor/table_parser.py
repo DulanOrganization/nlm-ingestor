@@ -2,9 +2,9 @@ import copy
 import numpy as np
 from collections import Counter
 
-from nlm_ingestor.ingestor.visual_ingestor import vi_helper_utils as vhu
-from nlm_ingestor.ingestor_utils.ing_named_tuples import BoxStyle
-from nlm_ingestor.ingestor import line_parser
+from ...ingestor.visual_ingestor import vi_helper_utils as vhu
+from ...ingestor_utils.ing_named_tuples import BoxStyle
+from ...ingestor import line_parser
 
 # TODO: setting TABLE_DEBUG to true cause line 1193 to break in visual ingestor
 # UnboundLocalError: local variable 'align_count' referenced before assignment

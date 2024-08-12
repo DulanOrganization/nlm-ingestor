@@ -1,6 +1,6 @@
-from nlm_ingestor.ingestor.visual_ingestor import table_parser
-from nlm_ingestor.ingestor_utils.utils import detect_block_center_aligned
-from nlm_ingestor.ingestor import line_parser
+from ...ingestor.visual_ingestor import table_parser
+from ...ingestor_utils.utils import detect_block_center_aligned
+from ...ingestor import line_parser
 import copy
 import operator
 

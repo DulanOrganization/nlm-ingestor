@@ -1,6 +1,6 @@
 import os
 
-from nlm_utils.utils import generate_version
+from ..nlm_utils.utils import generate_version
 
 from .pdf_ingestor import *
 

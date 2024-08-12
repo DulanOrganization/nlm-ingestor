@@ -2,11 +2,7 @@ import json
 import re
 
 import numpy as np
-from nltk import load
 from nltk import PunktSentenceTokenizer
-
-
-nltk_abbs = load("tokenizers/punkt/{}.pickle".format("english"))._params.abbrev_types
 
 
 class NpEncoder(json.JSONEncoder):
@@ -52,9 +48,12 @@ nlm_special_abbs = {
     "inc",
 }
 
-abbs = nltk_abbs | nlm_abbs
 
 nltk_tokenzier = PunktSentenceTokenizer()
+nltk_abbs = nltk_tokenzier._params.abbrev_types
+
+abbs = nltk_abbs | nlm_abbs
+
 
 rules = []
 

@@ -4,8 +4,8 @@ import os
 from bs4 import BeautifulSoup
 from tika import parser
 
-from nlm_ingestor.file_parser.file_parser import FileParser
-from nlm_utils.utils.utils import ensure_bool
+from ..file_parser.file_parser import FileParser
+from ..nlm_utils.utils.utils import ensure_bool
 
 
 class TikaFileParser(FileParser):

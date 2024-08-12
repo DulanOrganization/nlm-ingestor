@@ -1,4 +1,4 @@
-from nlm_ingestor.ingestor_utils.ing_named_tuples import BoxStyle, LineStyle
+from ...ingestor_utils.ing_named_tuples import BoxStyle, LineStyle
 
 font_weights = {"normal": 400, "bold": 600, "bolder": 900, "lighter": 200}
 font_families = {"bold": 600, "light": 200}
